@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 class="mb-4">Welcome, {{ session['user'] }}</h2>
+
+<div class="alert alert-success">
+  You are successfully logged in!
+</div>
+
+<a class="btn btn-primary" href="/appointments">View My Appointments</a>
+{% endblock %}
